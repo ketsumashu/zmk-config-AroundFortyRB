@@ -39,7 +39,7 @@
 
         bksp {
             bindings = <&kp BACKSPACE>;
-            key-positions = <26 27>;
+            key-positions = <15 16>;
             layers = <0>;
             timeout-ms = <40>;
             require-prior-idle-ms = <75>;
