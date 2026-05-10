@@ -171,7 +171,7 @@
         midwheel: midwheel {
             compatible = "zmk,behavior-hold-tap";
             label = "MIDWHEEL";
-            bindings = <&sl>, <&mkp>;
+            bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <45>;
