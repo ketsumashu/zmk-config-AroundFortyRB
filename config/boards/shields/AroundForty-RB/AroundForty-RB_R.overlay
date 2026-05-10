@@ -18,6 +18,10 @@
         ;
 };
 
+//Prevent accidental AML activation
+&zip_temp_layer {
+    require-prior-idle-ms = <350>;
+};
 
 / {
     /* スクロール方向をいつでも反転できるようにするための設定 */
@@ -37,7 +41,7 @@
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
                            /* AMLを有効にしたい場合は下のコメントを外してください */
-                           <&zip_temp_layer 3 300>;
+                           <&zip_temp_layer 3 650>;
 
         scroll-layer {
             layers = <6 7>;
