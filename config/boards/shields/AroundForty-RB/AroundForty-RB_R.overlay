@@ -21,6 +21,11 @@
 //Prevent accidental AML activation
 &zip_temp_layer {
     require-prior-idle-ms = <350>;
+    excluded-positions = <
+        16 // J
+        17 // K
+        18 // l
+    >;
 };
 
 / {
