@@ -102,7 +102,7 @@
         };
 
         scroll {
-            bindings = <&mo 5>;
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <41 40>;
             timeout-ms = <40>;
             require-prior-idle-ms = <75>;
@@ -192,10 +192,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp Q      &kp W         &kp E           &kp R         &kp T             &kp Y      &kp U  &kp I      &kp O      &kp P
-&kp A      &kp S         &kp D           &kp F         &kp G             &kp H      &kp J  &kp K      &kp L      &kp SEMI
-&kp Z      &kp X         &kp C           &kp V         &kp B      &none  &kp N      &kp M  &kp COMMA  &kp DOT    &kp SLASH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp SPACE  &mo 1  &kp ENTER  &none  &mo 2      &mkp LCLK  &mkp RCLK
+&kp Q     &kp W            &kp E     &kp R         &kp T             &kp Y      &kp U  &kp I      &kp O          &kp P
+&kp A     &kp S            &kp D     &kp F         &kp G             &kp H      &kp J  &kp K      &kp L          &kp SEMI
+&kp Z     &kp X            &kp C     &kp V         &kp B      &none  &kp N      &kp M  &kp COMMA  &kp DOT        &kp SLASH
+&mkp MB1  &midwheel 5 MB3  &mkp MB2  &kp LEFT_GUI  &kp SPACE  &mo 1  &kp ENTER  &none  &mo 2      &sk RIGHT_ALT  &sk RCTRL
             >;
         };
 
@@ -212,10 +212,10 @@
         layer2 {
             display-name = "2";
             bindings = <
-&kp EXCL    &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp LC(PERCENT)          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp GRAVE
-&kp ESCAPE  &trans       &trans    &trans      &trans                   &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT             &trans
-&trans      &trans       &trans    &trans      &trans           &trans  &trans     &trans         &trans        &trans                &trans
-&trans      &trans       &trans    &trans      &trans           &mo 4   &trans     &trans         &tog 0        &trans                &trans
+&kp EXCL    &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp GRAVE
+&kp ESCAPE  &trans       &trans    &trans      &trans               &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT             &trans
+&trans      &trans       &trans    &trans      &trans       &trans  &trans     &trans         &trans        &trans                &trans
+&trans      &trans       &trans    &trans      &trans       &mo 4   &trans     &trans         &tog 0        &trans                &trans
             >;
         };
 
