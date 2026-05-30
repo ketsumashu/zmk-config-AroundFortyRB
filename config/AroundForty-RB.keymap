@@ -102,11 +102,11 @@
         };
 
         scroll {
-            bindings = <&sl 5>;
-            key-positions = <40 41>;
+            bindings = <&mo 5>;
+            key-positions = <41 40>;
             timeout-ms = <40>;
             require-prior-idle-ms = <75>;
-            layers = <0 3>;
+            layers = <0>;
         };
     };
 
@@ -192,10 +192,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp Q      &kp W         &kp E           &kp R         &kp T             &kp Y      &kp U  &kp I      &kp O     &kp P
-&kp A      &kp S         &kp D           &kp F         &kp G             &kp H      &kp J  &kp K      &kp L     &kp SEMI
-&kp Z      &kp X         &kp C           &kp V         &kp B      &none  &kp N      &kp M  &kp COMMA  &kp DOT   &kp SLASH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp SPACE  &mo 1  &kp ENTER  &none  &mo 2      &mkp MB1  &mkp MB2
+&kp Q      &kp W         &kp E           &kp R         &kp T             &kp Y      &kp U  &kp I      &kp O      &kp P
+&kp A      &kp S         &kp D           &kp F         &kp G             &kp H      &kp J  &kp K      &kp L      &kp SEMI
+&kp Z      &kp X         &kp C           &kp V         &kp B      &none  &kp N      &kp M  &kp COMMA  &kp DOT    &kp SLASH
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp SPACE  &mo 1  &kp ENTER  &none  &mo 2      &mkp LCLK  &mkp RCLK
             >;
         };
 
